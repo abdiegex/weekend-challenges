@@ -9,12 +9,29 @@
         </style>
     </head>
 	<body>
-	
+	<div id = "checkerboard">
+	   
+     </div>
+	    
 	<script>
-	    for(var i = 0; i < 49; i++)
-	    {
-	        // add your divs here!
+	 
+	
+	    
+	    for(var i = 0; i < 49; i++) {
+
+	       var squares = document.createElement('div');
+	       squares.style.height = "60px";
+	       squares.style.width = "90px";
+	       
+	        if (i % 2 === 0) {
+	        squares.style.backgroundColor = "black";
+	    } else {
+	        squares.style.backgroundColor = "red";
+	    }
+	    
+	    document.body.appendChild(squares);
 	    }
 	</script>
+
 	</body>
 </html>
