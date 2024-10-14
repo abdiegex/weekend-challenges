@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+p{
+    color:rgb(245, 100, 3);
+    font-size: 5rem;
+}
+
+a,.btn{
+    transition: all 200ms ease;
+}
+
+nav, .nav-links{
+    display:flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+.logo{
+    font-size: 2rem;
+
+}
+.logo:hover{
+    cursor:default;
+}
+.text-align{
+    text-align: center;
+    align-self: center;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+}
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+}
+.experience-btn{
+    font-size: 5rem;
+     border-bottom:solid 1px black;
+     border-top:solid 1px black;
+    padding: 5px;
+   text-align:center;
+    
+}
+.experience-list{
+    display:none;
+    text-align: center;
+
+    
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px; /* Space between columns */
+    margin: 30px;
+    padding-top: 120vh;
+}
+.skillbox,
+.skillbox2,
+.skillbox3,
+.skillbox4 {
+    position: center;
+    width: 50%;
+    height: 150px; /* Adjust as needed */
+    background-color: hsl(27, 98%, 52%); /* Background color of the box */
+    border: 1px solid #ccc; /* Border around the box */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    opacity: 0;
+}
+
+.skillbox:hover,.skillbox2:hover,.skillbox3:hover,.skillbox4:hover{
+    opacity: 100;
+}
+
